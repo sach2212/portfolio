@@ -1,0 +1,333 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  -->
+    <!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+
+    <!-- html,body{
+        overflow-x: hidden; this is use to makin a responsive web in css
+    } -->
+</head>
+
+<body>
+
+
+    <div id="header">
+        <div class="container">
+            <nav>
+            
+                <div class="icons">
+                   
+                    <h1>web<span>serv.</webspan></h1>
+  
+                  </div>
+
+                <ul id='side-bar'>
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#contact">CONTACT US</a></li>
+                    <i class="fas fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick='startmenu()'></i>
+            </nav>
+
+            <div class="header-text">
+                
+                <h1>Hello,<br> I 'm <span> Sachin </span> <br> <p>and  i am Web Developer</p></h1>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- -------------------------------------------ABOUT ME------------------- -->
+    <div id="about">
+
+        <div class="container">
+            <div class="row">
+
+                <div class="about-col1">
+                    <img src="user.png" alt="">
+                </div>
+
+                <div class="about-col2">
+                    <h1>ABOUT ME</h1>
+                    <p class='loremtext'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nemo
+                        consectetur,
+                        voluptate obcaecati similique ex. Ipsa, eaque quo quae ducimus fuga veniam tenetur aliquam at
+                        ipsam doloribus,
+                        nisi nobis modi sapiente officiis recusandae alias?</p>
+
+
+                    <!--skillcl = is line and skils-data is content-->
+
+                    <div class="tab-tittle">
+                        <p class="tab-link skillcl" onclick="opentabs('skills')"> SKILLS</p>
+                        <p class="tab-link" onclick="opentabs('edu')"> EDUCATION</p>
+                        <p class="tab-link" onclick="opentabs('exp')"> EXPERIENCE</p>
+
+                    </div>
+
+                    <div class="tab-content skils-data" id='skills'>
+                        <ul>
+                            <li><span>web Developer</span><br> i m a desigingn websites/ and designer</li>
+                            <li><span>web Developer</span><br>i m a desigingn websites/ and designer</li>
+                            <li><span>web Developer</span><br>i ma a desigingn websites/ and designer</li>
+                        </ul>
+
+
+                    </div>
+
+                    <div class="tab-content " id='edu'>
+                        <ul>
+                            <li><span>web Developer2</span><br> i m a desigingn websites</li>
+                            <li><span>web Developer2</span><br>i m a desigingn websites</li>
+                            <li><span>web Developer2</span><br>i ma a desigingn websites</li>
+                        </ul>
+
+
+                    </div>
+
+                    <div class="tab-content" id='exp'>
+                        <ul>
+                            <li><span>web Developer3</span><br> i m a desigingn websites</li>
+                            <li><span>web Developer3</span><br>i m a desigingn websites</li>
+                            <li><span>web Developer3</span><br>i ma a desigingn websites</li>
+                        </ul>
+
+
+                    </div>
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ---------------------------------services-------------------/ -->
+
+    <div id="services">
+        <div class="container">
+
+            <h1 class='subtitle'>MY SERVICES</h1>
+            <div class="service-list">
+
+                <div>
+
+
+                    <i class="fas fa-code"></i>
+                    <h2>Website Design</h2>
+                    <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+                        amet consectetur adipisicing elit. Distinctio, est.</p>
+                </div>
+
+                <div>
+                    <i class="fas fa-house"></i>
+                    <h2>APP Design</h2>
+                    <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+                        amet consectetur adipisicing elit. Distinctio, est.</p>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-uncharted"></i>
+                    <h2>Software Design</h2>
+                    <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+                        amet consectetur adipisicing elit. Distinctio, est.</p>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <!-- // ------------------------portfolio/work------------- -->
+
+
+    <div id='portfolio'>
+
+        <div class="container">
+            <h1 class='subtitle'>MY WORK</h1>
+
+            <div class="work-list">
+
+
+
+                <div class="work">
+                    <img src="work-1.png" alt="">
+
+                    <div class="layer">
+                        <h3 class='minitext'>SOFTWARE APP</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.<br>
+                            Lorem ipsum dolor sit amet.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="work-2.png" alt="">
+
+                    <div class="layer">
+                        <h3 class='minitext'>SOCIAL MEDIA APP</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.<br>
+                            Lorem ipsum dolor sit amet.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+
+                </div>
+
+                <div class="work">
+                    <img src="work-3.png" alt="">
+
+                    <div class="layer">
+                        <h3 class='minitext'>MUSIC APP</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.<br>
+                            Lorem ipsum dolor sit amet.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+            <a href="#" id="btn"> See More</a>
+        </div>
+    </div>
+    <!-- ---------------------contact-------------- -->
+
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-left">
+                    <h1>Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-envelope"></i>abc@gmail.com</p>
+                    <p><i class="fas     fa-phone"></i>654654415</p>
+
+                    <div class="social-icon">
+
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <a href="work-3.png" download class=' btn2'> Download cv</a>
+
+                </div>
+
+                <div class="right">
+
+                    <form name='submit-to-google-sheet'>
+                        <input type="text" name="NAME" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="5" placeholder="Your Message"></textarea>
+                        <button type="submit" class='btn2 btn-sub'>Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+
+        </div>
+        <div class="copyr">
+            <p>Copywright @ sachin, made with <i class="fa-solid fa-heart"></i> by sachin.</p>
+        </div>
+    </div>
+
+
+
+
+    <script>
+
+        let sidebar = document.getElementById('side-bar');
+
+        function closemenu() {
+
+            sidebar.style.right = '-200px';      //right bhi ul me isiliye id ul me he
+        }
+        function startmenu() {
+
+            sidebar.style.right = '0px';
+        }
+
+    </script>
+
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <script>
+
+        // <!--skillcl = is line and skils-data is content-->
+
+        tablinks = document.getElementsByClassName('tab-link')
+        tabcontents = document.getElementsByClassName('tab-content')
+
+        function opentabs(tabsname) {
+
+            // for of loop takes an element
+            for (e of tablinks) {
+
+                e.classList.remove('skillcl');
+            }
+            for (tabcontent of tabcontents) {
+
+                tabcontent.classList.remove('skils-data');
+            }
+
+            event.currentTarget.classList.add('skillcl');       //jaha bhi cliack hua to 
+            document.getElementById(tabsname).classList.add('skils-data');
+            //tabname wil take id mentioned above
+        }
+
+
+
+
+
+
+    </script>
+    <!-- ----------contact form in google sheet------------------ -->
+    <script>
+
+
+        let msg = document.getElementById('msg')
+
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzWQrGDdKAXFyew9k10A5JIA85D_WOR9q2ZMLYOwYUJzVCpeenFqHPSv7-cgkGzWWl0CA/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = 'message was sent succesfully'
+                    setTimeout(function () {
+
+                        msg.innerHTML = '';
+
+                    }, 2000)
+                    form.reset()
+
+
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+
+</html>
